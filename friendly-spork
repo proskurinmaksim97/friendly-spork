@@ -1,0 +1,9 @@
+protocol VideoSettingsReducerProtocol {
+    mutating func reduce(_ currentState: VideoSettings,
+                         _ action: VideoSettingsModification) -> VideoSettings
+}
+
+struct VideoSettingsReducer: VideoSettingsReducerProtocol {
+    
+    mutating func reduce(_ currentState: VideoSettings,
+                         _ action: VideoSettingsModification) -> VideoSettings {
